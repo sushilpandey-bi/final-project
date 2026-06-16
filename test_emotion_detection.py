@@ -16,7 +16,7 @@ class TestEmotionDetector(unittest.TestCase):
         self.assertEqual(result['dominant_emotion'], 'sadness')
 
     def test_fear(self):
-        result = emotion_detector("I am scared and terrified!")
+        result = emotion_detector("I am scared and terrified of this!")
         self.assertEqual(result['dominant_emotion'], 'fear')
 
     def test_blank_input(self):
